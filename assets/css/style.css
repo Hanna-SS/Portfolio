@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat:wght@700&family=Neucha&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.menu {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 30px;
+}
+.menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+.menu span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+.menu ul, .menu li {
+    list-style: none;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0b16;
+    display: flex;
+}
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: auto;
+}
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 40px;
+    background-color: #EFC8DF;
+    animation: rotate 6s infinite linear;
+}
+.square-mini1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+    background-color: #000;
+    animation: rotate 6s infinite linear;
+}
+.square-mini2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: #EFC8DF;
+    animation: rotate 6s infinite linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+.tittle{
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    font-size: 25px;
+    text-align: end;
+}
+.tittle span {
+    display: flex;
+    justify-content: end;
+    
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #96858D;
+    font-size: 20px;
+}
+.projects {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.project-area {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #0e0b16;
+    animation: floating 6s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+@keyframes floating {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+.project-right{
+    display: flex;
+    flex-direction: column;
+    
+}
+.button-link {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.button-rep {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.project-area a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+}
+.port {
+    background-image: url('../images/portfolio.png');
+    background-size: cover;
+    background-position: center;
+    width: 550px;
+    height: 380px;
+    position: relative;
+    left: -20px;
+    border-radius: 250px;
+    border: 3px solid #A33ACB;
+}
+.awax {
+    background-image: url('../images/awax.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: -200px;
+    left: -420px;
+}
+.agartha {
+    background-image: url('../images/agartha.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+}
+.google {
+    background-image: url('../images/google.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: -10px;
+    left: 50px;
+}
+.pizzaria {
+    background-image: url('../images/pizzaria.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: -100px;
+    position: relative;
+    bottom: -30px;
+    left: 130px;
+}
+.starbucks {
+    background-image: url('../images/starbucks.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -200px;
+    left: -420px;
+}
+
+
+
+.about-container {
+    background-color: #E8DFE0;
+    padding: 20px;
+}
+#about {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0px;
+}
+.sobre {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 550px;
+    margin: auto;
+    align-items: center;
+}
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    font-family: 'Neucha', cursive;
+    
+}
+
+
+
+.contact-container {
+    background-color: #000;
+    color: #FFF;
+    padding: 25px;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: auto;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+}
+.contato img {
+    margin: 10px;
+    width: 64px;
+    height: 60px;
+}
+footer {
+    background-color: #000;
+    color: #FFF;
+    font-size: 12px;
+}
+.copyright {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.copyright p {
+    text-align: center;
+    margin: 5px;
+}
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width:650px) {
+    header {
+        width: 100vw;
+        height: 100vh;
+    }
+    nav {
+        position: fixed;
+    }
+    .menu {
+        position: fixed;
+        top: 10;
+        z-index: 99;
+        width: 95vw;
+        height: 50px;
+        margin: auto;
+        padding: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .menu span {
+        width: 30px;
+        height: 30px;
+        margin: 0px;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        margin: 10px; 
+    }
+
+
+
+    
+    .bg {
+        display: flex;
+        flex-direction: column;
+    }
+    .square {
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+        margin: 0px;
+    }
+    .square-mini1{
+        width: 80px;
+        height: 80px;
+    }
+    .square-mini2{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+    }
+    .tittle h1 {
+        font-size: 22px;
+    }
+    .tittle {
+        font-size: 16px;
+        margin: 20px;
+    }
+
+
+
+
+
+    .main {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 100vw;
+    }
+    .projects {
+        width: 95vw;
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .project-area {
+        display: flex;
+        width: 275px;
+        height: 200px;
+    }
+    .button-link,
+    .button-rep {
+        
+        width: 90px;
+        height: 40px;
+        font-size: 16px;
+    }
+    @keyframes floating {
+        0%, 100%{}
+        50% {}
+    }
+    .awax, .agartha, .google, .pizzaria, .starbucks, .port {
+        left: 0px;
+        bottom: 0px;
+        top: 0px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+
+
+
+    #about {
+        padding: 20px;
+    }
+    .about-container{
+        height: 700px;
+        padding: 0px;
+        
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+    .sobre img {
+        width: 200px;
+        height: 200px;
+    }
+    .apresentacao {
+        width: 300px;
+        height: 400px;
+        font-size: 20px;
+        margin: auto;
+    }
+    .contato {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+@media (min-width:651px) and (max-width:1100px) {
+    header {
+        width: 100vw;
+        height: 100vh;
+    }
+    nav {
+        position: fixed;
+    }
+    .menu {
+        position: fixed;
+        top: 10;
+        z-index: 99;
+        width: 95vw;
+        height: 50px;
+        margin: auto;
+        padding: auto;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    .menu span {
+        width: 30px;
+        height: 30px;
+        margin: 0px;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        margin: 10px; 
+    }
+    .bg {
+        display: flex;
+        flex-direction: column;
+    }
+    .square {
+        width: 150px;
+        height: 150px;
+        border-radius: 30px;
+        margin: 0px;
+    }
+    .square-mini1{
+        width: 115px;
+        height: 115px;
+    }
+    .square-mini2{
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .tittle h1 {
+        font-size: 24px;
+    }
+    .tittle {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+
+
+    .main {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 100vw;
+    }
+    .projects {
+        width: 95vw;
+        height: 1800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .project-area {
+        display: flex;
+        width: 70vw;
+        min-height: 250px;
+        max-height: 300px;
+    }
+    .button-link,
+    .button-rep {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+        margin: 10px;
+    }
+    @keyframes floating {
+        0%, 100%{}
+        50% {}
+    }
+    .awax, .agartha, .google, .pizzaria, .starbucks, .port {
+        left: 0px;
+        bottom: 0px;
+        top: 0px;
+        border-radius: 10px;
+        margin: 20px;
+        background-position: center top;
+    }
+    #about {
+        padding: 20px;
+    }
+    .about-container{
+        height: 800px;
+        padding: 0px;
+        
+    }
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+    }
+    .sobre img {
+        width: 300px;
+        height: 300px;
+    }
+    .apresentacao {
+        width: 90vw;
+        height: 400px;
+        font-size: 20px;
+        margin: auto;
+    }
+    .apresentacao h3 {
+        text-align: center;
+    }
+
+
+
+    .contato {
+        display: flex;
+        width: 100px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato img {
+        width: 40px;
+        height: 40px;
+    }
+}
